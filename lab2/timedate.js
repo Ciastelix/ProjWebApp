@@ -42,6 +42,6 @@ function showSeconds() {
   var timevalue = "";
   timevalue += hours * 3600 + minutes * 60 + seconds;
   document.getElementById("seconds").innerHTML = timevalue;
-  timerID = setTimeout("showDelta()", 1000);
+  timerID = setTimeout("showSeconds()", 1000);
   timerRunning = true;
 }
