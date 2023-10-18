@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Mateusz Zwierzyński" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="kolorujtlo.js"></script>
+    <script src="timedate.js"></script>
+  </head>
+  <body onload="startclock()">
+    <nav class="nav">
+      <div class="nav-item">
+        <a href="index.html">strona główna</a>
+      </div>
+      <div class="nav-item">
+        <a href="zdjecia.html">zdjęcia</a>
+      </div>
+      <div class="nav-item">
+        <a href="historia.html">historia</a>
+      </div>
+      <div class="nav-item">
+        <a href="linki.html">linki</a>
+      </div>
+      <div class="nav-item">
+        <a href="wiecej.html">więcej</a>
+      </div>
+      <div class="nav-item">
+        <a href="kontakt.html">kontakt</a>
+      </div>
+    </nav>
+    <button onclick="hideForm()">Ukryj formularz</button>
+    <button onclick="showForm()">Pokaż formularz</button>
+    <form method="POST" name="background" id="form">
+      <input
+        type="button"
+        value="zółty"
+        onclick="changeBackground('#FFF000')"
+      />
+
+      <input
+        type="button"
+        value="czarny"
+        onclick="changeBackground('#000000')"
+      />
+      <input
+        type="button"
+        value="biaty"
+        onclick="changeBackground('#FFFFFF')"
+      />
+
+      <input
+        type="button"
+        value="zielony"
+        onclick="changeBackground('#00FF00')"
+      />
+
+      <input
+        type="button"
+        value="niebieski"
+        onclick="changeBackground('#0000FF')"
+      />
+
+      <input
+        type="button"
+        value="pomaranczowy"
+        onclick="changeBackground('#FF8000')"
+      />
+      <input
+        type="button"
+        value="szary"
+        onclick="changeBackground('#c0c0c0')"
+      />
+
+      <input
+        type="button"
+        value="czerwony"
+        onclick="changeBackground('#FF0000')"
+      />
+      <input
+        type="button"
+        value="różowy"
+        onclick="changeBackground('#FF00FF')"
+      />
+    </form>
+    <form name="font-color" method="post">
+      <input
+        type="button"
+        value="czerwony"
+        onclick="changeFontColor('#FF0000')"
+      />
+      <input
+        type="button"
+        value="zielony"
+        onclick="changeFontColor('#00FF00')"
+      />
+      <input type="button" value="żółty" onclick="changeFontColor('#FFFF00')" />
+      <input
+        type="button"
+        value="niebieski"
+        onclick="changeFontColor('#0000FF')"
+      />
+      <input type="button" value="biały" onclick="changeFontColor('#FFFFFF')" />
+    </form>
+    przykład
+    <br />
+    <div id="zegarek"></div>
+    <div id="data"></div>
+    <div id="seconds"></div>
+  </body>
+</html>

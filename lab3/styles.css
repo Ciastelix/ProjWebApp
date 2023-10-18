@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-image: url("https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1200"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+}
+.nav {
+  margin: 0;
+  padding: 0;
+  background-color: #333131;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+}
+
+.nav-item {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 16%;
+  height: 100%;
+  line-height: 20px;
+}
+.nav-item:hover {
+  color: #e887ce;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.kontakt {
+  text-decoration: none;
+
+  display: inline-block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  font-size: 5rem;
+  color: #000;
+}
+.kontakt:hover {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #000;
+  color: #fff;
+}
+.tytul {
+  text-align: center;
+  font-size: 5rem;
+  color: #79beea;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  text-transform: capitalize;
+}
+
+.historia {
+  text-align: center;
+  font-size: 2rem;
+  color: #79beea;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+.historia-zdjecie {
+  width: 10%;
+  height: 20%;
+  float: right;
+}
+.historia.zdjecie-podpis {
+  clear: both;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.czerwony {
+  color: #e887ce;
+}
+.historia > p {
+  font-size: 1.5rem;
+}
+.zdjecia {
+  text-align: center;
+}
+.zdjecia > img {
+  width: 20%;
+  height: 20%;
+  padding: 1%;
+}
+
+.formularz {
+  margin: 0;
+  margin-top: 15%;
+  width: 100%;
+  height: 100%;
+}
+.formularz > input,
+textarea {
+  margin: 2% 0;
+  width: 100%;
+  height: 100%;
+  clear: both;
+  border: #000 1px solid;
+}
+
+td {
+  background-color: #d5e97a;
+}
+th {
+  background-color: #79beea;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.test-block {
+  width: 200px;
+  border: 2px solid rgba(71, 236, 30, 1);
+  background: rgba(71, 236, 30, 0.7);
+  text-align: center;
+  color: #000;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

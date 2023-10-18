@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Mateusz Zwierzyński" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="kolorujtlo.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-item">
+        <a href="index.html">strona główna</a>
+      </div>
+      <div class="nav-item">
+        <a href="zdjecia.html">zdjęcia</a>
+      </div>
+      <div class="nav-item">
+        <a href="historia.html">historia</a>
+      </div>
+      <div class="nav-item">
+        <a href="linki.html">linki</a>
+      </div>
+      <div class="nav-item">
+        <a href="wiecej.html">więcej</a>
+      </div>
+      <div class="nav-item">
+        <a href="kontakt.html">kontakt</a>
+      </div>
+    </nav>
+    <div id="animacjaTestowa1" class="test-block">kliknij, a sie powieksze</div>
+    <script>
+      $("#animacjaTestowa1").on("click", function () {
+        $(this).animate(
+          {
+            width: "500px",
+            opacity: 0.5,
+            fontSize: "3em",
+            borderWidth: "10px",
+          },
+          1500
+        );
+      });
+    </script>
+    <div id="animacjaTestowa2" class="test-block">
+      Najedi kursorem, a sie powieksze
+    </div>
+
+    <script>
+      $("#animacjaTestowa2").on({
+        mouseover: function () {
+          $(this).animate(
+            {
+              width: 300,
+            },
+            800
+          );
+        },
+        mouseout: function () {
+          $(this).animate(
+            {
+              width: 200,
+            },
+            800
+          );
+        },
+      });
+    </script>
+    <div id="animacjaTestowa3" class="test-block">kliknij, abym urósł</div>
+    <script>
+      $("#animacjaTestowa3").on("click", function () {
+        if (!$(this).is(":animated")) {
+          $(this).animate({
+            width: "+=" + 50,
+            height: "+=" + 10,
+            opacity: "-=" + 0.1,
+            duration: 3000,
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
