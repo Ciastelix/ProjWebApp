@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Mateusz Zwierzyński" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/kolorujtlo.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Strona główna</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-item">
+        <a href="index.html">strona główna</a>
+      </div>
+
+      <div class="nav-item">
+        <a href="historia.html">historia</a>
+      </div>
+
+      <div class="dropdown nav-item">
+        TWÓRCY
+        <div class="dropdown-content">
+          <a href="louis.html">Louis Armstrong</a>
+          <a href="charlie.html">Charlie Parker</a>
+          <a href="ella.html">Ella Fitzgerald</a>
+          <a href="josh.html">John Coltrane</a>
+          <a href="nina.html">Nina Simone</a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="tytul">Historia Jazzu</h1>
+    <h2>Kontakt</h2>
+    <form
+      action="mailto:mail@mail.cm"
+      method="post"
+      enctype="text/plain"
+      class="formularz"
+    >
+      <label for="name">Imię:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Twój Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Wiadomość:</label>
+      <textarea id="message" name="message" rows="2" required></textarea
+      ><br /><br />
+
+      <input type="submit" value="Wyślij" />
+    </form>
+    <script>
+      $(document).ready(function () {
+        $("a").click(function (event) {
+          event.preventDefault();
+          var link = $(this).attr("href");
+          $("body").addClass("leaving");
+          setTimeout(function () {
+            window.location.href = link;
+          }, 500);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Mateusz Zwierzyński" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/kolorujtlo.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Strona główna</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-item">
+        <a href="index.html">strona główna</a>
+      </div>
+
+      <div class="nav-item">
+        <a href="historia.html">historia</a>
+      </div>
+
+      <div class="dropdown nav-item">
+        TWÓRCY
+        <div class="dropdown-content">
+          <a href="louis.html">Louis Armstrong</a>
+          <a href="charlie.html">Charlie Parker</a>
+          <a href="ella.html">Ella Fitzgerald</a>
+          <a href="josh.html">John Coltrane</a>
+          <a href="nina.html">Nina Simone</a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="tytul">Nina Simone - Ikona Jazzu i Aktywistka Społeczna</h1>
+    <div class="historia">
+      <p>
+        Nina Simone, znana jako "High Priestess of Soul," to jedna z najbardziej
+        wpływowych wokalistek i kompozytorek jazzowych w historii. Jej
+        niepowtarzalny głos, talent pianistyczny i zaangażowanie społeczne
+        uczyniły ją wyjątkową artystką, która przekroczyła granice muzyki.
+      </p>
+
+      <h2>Wczesne Lata i Kariera</h2>
+      <p>
+        Nina Simone urodziła się jako Eunice Kathleen Waymon 21 lutego 1933 roku
+        w Tyron, Północna Karolina. Rozpoczęła naukę gry na fortepianie w młodym
+        wieku i szybko okazało się, że ma niezwykły talent muzyczny. Jej kariera
+        muzyczna rozpoczęła się od występów w miejscowych klubach i kościołach.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fapi.time.com%2Fwp-content%2Fuploads%2F2016%2F04%2Fsimone.jpeg&f=1&nofb=1&ipt=89dff1b971397baca36953492fa34c79a90ec8f45eaca126a332676654a3ec1e&ipo=images"
+          alt=""
+        />
+      </p>
+
+      <h2>Różnorodność Repertuaru</h2>
+      <p>
+        Nina Simone była znana z niezwykłej różnorodności swojego repertuaru.
+        Jej muzyka łączyła jazz, bluesa, soula, muzyki klasycznej i elementy
+        folkowe. Jej interpretacje utworów były pełne emocji i autentyczności.
+        Przeszła przez wiele stylów muzycznych, co sprawiło, że była ceniona
+        zarówno przez miłośników jazzu, jak i szeroką publiczność.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-eyTNN_SnaQg%2FT1iPBwPTqNI%2FAAAAAAAABjo%2F7bks-HAYHa8%2Fs1600%2FNina%2BSimone_Photo-1.jpg&f=1&nofb=1&ipt=1c26cbfbf796f81915eea823cd4ea2ad975f0f5d104ce7ac62d9f597c74ac228&ipo=images"
+          alt=""
+        />
+      </p>
+
+      <h2>Aktywizm Społeczny</h2>
+      <p>
+        Nina Simone była również znana ze swojego zaangażowania w ruchy na rzecz
+        praw obywatelskich i równości rasowej. Jej piosenki, takie jak
+        "Mississippi Goddam" i "To Be Young, Gifted and Black," stały się
+        hymnami ruchu praw obywatelskich w latach 60. Jej muzyka była narzędziem
+        zmiany społecznej i walczyła z rasizmem i niesprawiedliwością.
+      </p>
+
+      <h2>Dziedzictwo</h2>
+      <p>
+        Nina Simone zmarła 21 kwietnia 2003 roku, ale jej muzyka i wpływ nadal
+        żyją. Była ikoną jazzu, która przekroczyła granice gatunku i użyła
+        swojego talentu, aby wyrazić swoje przekonania i walkę o sprawiedliwość
+        społeczną. Jej twórczość i zaangażowanie pozostawiają trwałe dziedzictwo
+        w muzyce i społeczeństwie.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F1f%2F61%2Fd5%2F1f61d52dab8bfaa0dac30b040698f2bc.jpg&f=1&nofb=1&ipt=db984a9e2ddd53fb3bc0d5a2b9f9ff70d3b246f6ef8023c8fa149552b33c920c&ipo=images"
+          alt=""
+        />
+      </p>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("a").click(function (event) {
+          event.preventDefault();
+          var link = $(this).attr("href");
+          $("body").addClass("leaving");
+          setTimeout(function () {
+            window.location.href = link;
+          }, 500);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Mateusz Zwierzyński" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/kolorujtlo.js"></script>
+    <script src="./js/dropdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Strona główna</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav-item">
+        <a href="index.html">strona główna</a>
+      </div>
+
+      <div class="nav-item">
+        <a href="historia.html">historia</a>
+      </div>
+
+      <div class="dropdown nav-item">
+        TWÓRCY
+        <div class="dropdown-content">
+          <a href="louis.html">Louis Armstrong</a>
+          <a href="charlie.html">Charlie Parker</a>
+          <a href="ella.html">Ella Fitzgerald</a>
+          <a href="josh.html">John Coltrane</a>
+          <a href="nina.html">Nina Simone</a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="tytul">Louis Armstrong - Ikona Jazzu</h1>
+    <div class="historia">
+      <p>
+        Louis Armstrong, znany również jako "Satchmo" lub "Ambassador of Jazz",
+        to jedna z najważniejszych postaci w historii jazzu. Urodzony 4 sierpnia
+        1901 roku w Nowym Orleanie, stał się nie tylko wirtuozem trąbki, ale
+        także jednym z najbardziej wpływowych wokalistów w historii tego gatunku
+        muzycznego.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.9L-eZUrtqtjxEZbJSEEhyAHaHa%26pid%3DApi&f=1&ipt=d16d7d3ef675e98604aedb2f1ad76145523554615908e65c3a43cff3ae35310a&ipo=images"
+          alt=""
+        />
+      </p>
+
+      <h2>Wczesne Życie i Kariera</h2>
+      <p>
+        Armstrong dorastał w trudnych warunkach na ulicach Nowego Orleanu. Już w
+        młodym wieku zainteresował się muzyką, ucząc się grać na trąbce w
+        lokalnym ośrodku dla chłopców. Jego talent muzyczny był oczywisty i
+        szybko zdobył uznanie w miejscowej scenie muzycznej.
+      </p>
+
+      <h2>Innowacje i Wpływ</h2>
+      <p>
+        Louis Armstrong wprowadził wiele innowacji w grze na trąbce, takie jak
+        technika "scat singing", która polega na improwizacji wokalnej za pomocą
+        nonsensownych dźwięków. Jego charakterystyczny, chropowaty głos i
+        umiejętność improwizacji uczyniły go wyjątkowym artystą. Jego solówki
+        trąbkowe są nadal studiowane i podziwiane przez młodych muzyków na całym
+        świecie.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpages.stolaf.edu%2Fwp-content%2Fuploads%2Fsites%2F593%2F2017%2F11%2Flouis-armstrong-4.jpg&f=1&nofb=1&ipt=0b1a119475049aa4438634f3ae56f674df8bf3b0f681b6b1cc5b7bd65ba8acaa&ipo=images"
+          alt=""
+        />
+      </p>
+
+      <h2>Rozwinięcie Jazzowej Muzyki Rozrywkowej</h2>
+      <p>
+        Louis Armstrong odegrał istotną rolę w rozwoju jazzowej muzyki
+        rozrywkowej. Jego nagrania z big bandem Louisa Armstronga i jego grupą
+        Hot Five i Hot Seven z lat 20. i 30. były przełomowe. Jego zdolność do
+        prowadzenia zespołu i wprowadzania nowych aranżacji była nieoceniona.
+      </p>
+
+      <h2>Dziedzictwo</h2>
+      <p>
+        Armstrong pozostawił trwałe dziedzictwo w świecie muzyki. Jego utwory,
+        takie jak "What a Wonderful World" i "Hello, Dolly!", nadal są
+        uwielbiane i wykonywane na całym świecie. Był również aktywny w ruchu na
+        rzecz praw obywatelskich, walcząc z rasizmem i dyskryminacją.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.amomama.com%2Fc32cba4de7b43c49ed7cf8c519f86029.jpg%3Fwidth%3D1012%26height%3D1024&f=1&nofb=1&ipt=ffcf765ddde5ad33801e1ad18885188b1e47da096cf20fded8e34ca794a2293d&ipo=images"
+          alt=""
+        />
+      </p>
+
+      <p>
+        Louis Armstrong zmarł 6 lipca 1971 roku, ale jego muzyka i wpływ nadal
+        żyją. Był nie tylko virtuozem, ale także ambasadorem jazzu,
+        przyczyniając się do rozwoju i rozpowszechniania tego niezwykłego
+        gatunku muzycznego.
+      </p>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("a").click(function (event) {
+          event.preventDefault();
+          var link = $(this).attr("href");
+          $("body").addClass("leaving");
+          setTimeout(function () {
+            window.location.href = link;
+          }, 500);
+        });
+      });
+    </script>
+  </body>
+</html>
