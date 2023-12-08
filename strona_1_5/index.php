@@ -81,3 +81,4 @@ $nr_indeksu = 167368;
 $nrGrupy = 4;
 echo "Autor: Mateusz Zwierzyński, nr indeksu: $nr_indeksu, grupa: $nrGrupy</br></br>"
 ?>
+<?php include($strona);?>
