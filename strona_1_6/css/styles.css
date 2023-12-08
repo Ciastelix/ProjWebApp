@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #ca9292;
+}
+.nav {
+  margin: 0;
+  padding: 0.5rem;
+  background-color: #333131;
+  width: 100%;
+  height: 30%;
+  text-align: center;
+}
+
+.nav-item {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  display: inline-block;
+  width: 16%;
+  height: 100%;
+  line-height: 20px;
+}
+.nav-item:hover {
+  color: #e887ce;
+}
+
+.nav-item > a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.kontakt {
+  text-decoration: none;
+
+  display: inline-block;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  width: 100%;
+  height: 90%;
+  text-align: center;
+  font-size: 5rem;
+  color: #000;
+}
+.kontakt:hover {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #000;
+  color: #fff;
+}
+.tytul {
+  text-align: center;
+  font-size: 5rem;
+  color: #180e49;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  text-transform: capitalize;
+}
+
+.historia {
+  text-align: center;
+  font-size: 2rem;
+  color: #180e49;
+  padding-top: 5%;
+  padding-bottom: 2%;
+}
+.historia > p {
+  font-size: 1.5rem;
+  margin: 2rem 0rem;
+  padding: 0 10%;
+}
+.historia > p > img {
+  width: 15vw;
+  height: 15vw;
+  float: right;
+}
+
+.formularz {
+  text-align: center;
+  margin: 0;
+  margin-top: 15%;
+  width: 100%;
+  height: 100%;
+}
+.formularz > input,
+textarea {
+  margin: 2% 0;
+  width: 100%;
+  height: 100%;
+  clear: both;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 1%;
+  font-size: 1.5rem;
+}
+
+td {
+  background-color: #d5e97a;
+}
+th {
+  background-color: #79beea;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.test-block {
+  width: 200px;
+  border: 2px solid rgba(71, 236, 30, 1);
+  background: rgba(71, 236, 30, 0.7);
+  text-align: center;
+  color: #000;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Style the dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.entering {
+  animation: slideIn 0.5s forwards;
+}
+
+.leaving {
+  animation: slideOut 0.5s forwards;
+}
+
+/* Keyframe animations for sliding effect */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

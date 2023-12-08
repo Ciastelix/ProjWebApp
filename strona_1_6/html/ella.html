@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Mateusz Zwierzyński" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/kolorujtlo.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Strona główna</title>
+  </head>
+  <body>
+    <h1 class="tytul">Ella Fitzgerald - First Lady of Song</h1>
+    <div class="historia">
+      <p>
+        Ella Fitzgerald, znana jako "First Lady of Song," to jedna z
+        najwybitniejszych wokalistek jazzowych w historii. Jej ujmujący głos i
+        zdolność do improwizacji uczyniły ją ikoną muzyki jazzowej, a jej wpływ
+        na jazz i muzykę rozrywkową jest nieoceniony.
+      </p>
+
+      <h2>Wczesne Lata i Kariera</h2>
+      <p>
+        Ella Fitzgerald urodziła się 25 kwietnia 1917 roku w Newport News,
+        Wirginia. Jej wczesne życie było trudne, a po śmierci matki została
+        wysłana do domu dziecka. Jej kariera muzyczna rozpoczęła się w wieku 17
+        lat, kiedy wygrała konkurs talentów w klubie Apollo w Nowym Jorku. To
+        wydarzenie otworzyło przed nią drzwi do wielkiej kariery.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.esquerda.net%2Fsites%2Fdefault%2Ffiles%2Fella_0.jpg&f=1&nofb=1&ipt=7c3585979974e9d2fcfdd7b5381a5153260e09dc3a636dffdff1970a3e808aad&ipo=images"
+          alt=""
+        />
+      </p>
+
+      <h2>Swing Era i Popularność</h2>
+      <p>
+        W okresie ery swingu, w latach 30. i 40., Ella Fitzgerald stała się
+        popularną wokalistką zespołu Chicka Webba. Jej interpretacje standardów
+        jazzowych i umiejętność improwizacji robiły wrażenie na publiczności.
+        Nagrała wiele hitów, takich jak "A-Tisket, A-Tasket," który stał się
+        jednym z jej największych przebojów.
+      </p>
+
+      <h2>Różnorodność Repertuaru</h2>
+      <p>
+        To, co wyróżniało Ellę Fitzgerald, to jej zdolność do śpiewania wielu
+        różnych stylów muzycznych. Oprócz jazzu, wykonywała piosenki z
+        repertuaru amerykańskiego standardu, muzyki pop, bluesa i soulu. Jej
+        elastyczność muzyczna sprawiła, że była ceniona zarówno przez słuchaczy
+        jazzu, jak i szerokiej publiczności.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F6%2F65%2FElla_Fitzgerald_1962.JPG&f=1&nofb=1&ipt=933d8a6374312b0ce65f52a18f4d0851970413388966e76c5c00555b981c88d6&ipo=images"
+          alt=""
+        />
+      </p>
+
+      <h2>Wpływ i Dziedzictwo</h2>
+      <p>
+        Ella Fitzgerald miała olbrzymi wpływ na pokolenia późniejszych
+        wokalistów i wokalistek. Jej technika wokalna, precyzja w intonacji i
+        zdolność do improwizacji były niezrównane. Dzięki swoim nagrań i
+        koncertom, przyczyniła się do popularyzacji jazzu na całym świecie. Ella
+        Fitzgerald jest ikoną, której dziedzictwo nadal żyje w muzyce.
+      </p>
+
+      <p>
+        Ella Fitzgerald zmarła 15 czerwca 1996 roku, ale jej muzyka pozostaje
+        żywa. Była "First Lady of Song" i pozostanie inspiracją dla przyszłych
+        pokoleń artystów.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-NN6fz25UsFk%2FXqR5bmg1meI%2FAAAAAAADxgM%2F85zBxz-OMVIrj4uy4ITSR1Y491atT8diwCLcBGAsYHQ%2Fs1600%2Fella-fitzgerald-18.jpg&f=1&nofb=1&ipt=af16eedc6b47505a4417bff9ddd734ba83563db9cb9727bc9e6dbcafd23f8256&ipo=images"
+          alt=""
+        />
+      </p>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("a").click(function (event) {
+          event.preventDefault();
+          var link = $(this).attr("href");
+          $("body").addClass("leaving");
+          setTimeout(function () {
+            window.location.href = link;
+          }, 500);
+        });
+      });
+    </script>
+  </body>
+</html>
