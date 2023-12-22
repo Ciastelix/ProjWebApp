@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="pl" />
+    <meta name="Author" content="Mateusz Zwierzyński" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="../js/kolorujtlo.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Strona główna</title>
+  </head>
+  <body>
+    <h1 class="tytul">Charlie Parker - Bird of Bebop</h1>
+    <div class="historia">
+      <p>
+        Charlie Parker, znany również jako "Bird," to legenda jazzu i jeden z
+        najważniejszych saksofonistów i kompozytorów w historii tego gatunku
+        muzycznego. Jego innowacyjne podejście do improwizacji, technika gry na
+        saksofonie i wprowadzenie bebopu uczyniły go ikoną jazzowej rewolucji.
+      </p>
+
+      <h2>Wczesne Lata i Kariera</h2>
+      <p>
+        Charlie Parker urodził się 29 sierpnia 1920 roku w Kansas City,
+        Missouri. Jego wczesne lata były okresem intensywnego uczenia się gry na
+        saksofonie. Jego talent muzyczny był widoczny od najmłodszych lat.
+        Parker zaczął grać profesjonalnie w miejscowych klubach jazzowych, a
+        jego kariera nabrała rozpędu.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.npr.org%2Fassets%2Fimg%2F2012%2F08%2F27%2Fgettyimages_91145919_vert-a6ae7d545e69e9213b32e19a52cc1c85e786d61e.jpg&f=1&nofb=1&ipt=f731354e7fbe919901c50f3b3786e02be5b851372c804cfed050edc098758ef9&ipo=images"
+          alt=""
+        />
+      </p>
+
+      <h2>Bebop i Rewolucja w Jazzie</h2>
+      <p>
+        Charlie Parker jest często uważany za jednego z głównych twórców i
+        prekursorów bebopu, nowego i złożonego stylu jazzu. Wraz z trębaczem
+        Dizzy Gillespiem i innymi muzykami, wprowadził nowe harmonie, tempo i
+        techniki improwizacyjne. Jego solówki saksofonowe były szybkie, złożone
+        i pełne emocji, co stało się znakiem rozpoznawczym bebopu.
+      </p>
+
+      <h2>Współpraca i Wpływ</h2>
+      <p>
+        Parker współpracował z wieloma innymi wybitnymi muzykami jazzowymi, w
+        tym z Dizzy Gillespiem, Maxem Roachem i Thelonious Monk. Jego nagrania i
+        koncerty wpłynęły na rozwój jazzu i miały ogromny wpływ na przyszłe
+        pokolenia saksofonistów i muzyków jazzowych.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thefamouspeople.com%2Fprofiles%2Fthumbs%2Fcharlie-parker-5.jpg&f=1&nofb=1&ipt=83d18eb095c4c212e7ae4de9761b945abf0eb7640209488d31df5e41176910cb&ipo=images"
+          alt=""
+        />
+      </p>
+
+      <h2>Tragedia i Dziedzictwo</h2>
+      <p>
+        Pomimo swojego genialnego talentu, Charlie Parker zmagał się z
+        problemami zdrowotnymi, wynikającymi z uzależnienia od narkotyków i
+        alkoholu. Zmarł 12 marca 1955 roku w wieku 34 lat. Jego śmierć była
+        tragedią dla świata muzyki jazzowej. Jednak jego dziedzictwo nadal trwa,
+        a jego nagrania i kompozycje są cenione przez miłośników jazzu na całym
+        świecie.
+      </p>
+
+      <p>
+        Charlie Parker, "Bird," pozostaje legendą bebopu i ikoną jazzu. Jego
+        niepowtarzalny wkład w muzykę jest nadal badany i podziwiany przez
+        muzyków i miłośników jazzu.
+        <img
+          src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Falldylan.com%2Fwp-content%2Fuploads%2F2013%2F08%2Fcharlie-parker-yardbird.jpg&f=1&nofb=1&ipt=6b9f685587d35d37b95a4f550ca2751aff93a79633b1fab8e44cc54dfbb411d4&ipo=images"
+          alt=""
+        />
+      </p>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("a").click(function (event) {
+          event.preventDefault();
+          var link = $(this).attr("href");
+          $("body").addClass("leaving");
+          setTimeout(function () {
+            window.location.href = link;
+          }, 500);
+        });
+      });
+    </script>
+  </body>
+</html>
